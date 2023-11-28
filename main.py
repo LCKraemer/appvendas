@@ -8,8 +8,11 @@ from bannervendedor import BannerVendedor
 import requests
 from kivy.core.window import Window
 import os
+import certifi
 from datetime import date
 from functools import partial  # permite que um parametro seja passado para uma função usada como parametro
+
+os.environ["SSL_CERT_FILE"] = certifi.where()
 
 GUI = Builder.load_file("main.kv")
 class MainApp(App):
