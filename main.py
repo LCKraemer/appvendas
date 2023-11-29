@@ -16,7 +16,7 @@ os.environ["SSL_CERT_FILE"] = certifi.where()
 
 GUI = Builder.load_file("main.kv")
 class MainApp(App):
-    Window.size = (360, 640)  # changing window size to match 16:9 phone resolution. might have to delete later.
+    #Window.size = (360, 640)  # changing window size to match 16:9 phone resolution. might have to delete later.
 
     cliente = None
     produto = None
